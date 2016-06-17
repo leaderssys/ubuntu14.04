@@ -1,0 +1,20 @@
+
+
+CUDA_PATH = /usr/local/cuda
+
+export CUDA_PATH
+
+
+PATH = $CUDA_PATH/bin:$PATH
+
+export PATH
+
+
+LD_LIBRARY_PATH=$CUDA_PATH/lib64:$CUDA_PATH/lib:$LD_LIBRARY_PATH
+
+export LD_LIBRARY_PATH
+
+
+LD_INCLDUE_PATH=$LD_LIBRARY_PATH:$CUDA_PATH/include
+
+export LD_INCLUDE_PATH
